@@ -11,28 +11,28 @@
 </div>
 <form class="container" action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
     <div class="form-row">
-        <fieldset class="col-lg-8 col-sm-6">
+        <fieldset class="col-lg-8 col-sm-12">
             <legend class="mb-3">
                 Personal Information
             </legend>
             <div class="row">
-                <div class="form-group col-lg-5 mb-4">
+                <div class="form-group col-lg-5 col-sm-6 mb-4">
                     <label for="name">Name: <span class="text-muted">(Required)</span></label>
                     <input class="form-control" name="name" id="name" type="text" required min="2" placeholder="First name">
                 </div>
-                <div class="form-group col-lg-5 mb-4">
+                <div class="form-group col-lg-5 col-sm-6 mb-4">
                     <label for="surname">Surname: <span class="text-muted">(Required)</span></label>
                     <input class="form-control" name="surname" id="surname" type="text" required min="2" placeholder="Last name">
                 </div>
             </div>
             <div class="row">
-                <div class="form-group col-lg-5 mb-4">
+                <div class="form-group col-lg-5 col-sm-6 mb-4">
                     <label for="age">How old are you?:</label>
                     <input class="form-control" name="age" id="age" type="number" maxlength="3" min="0" max="999" size="4" placeholder="Your age">
                 </div>
-                <div class="form-group col-lg-5 mb-4">
+                <div class="form-group col-lg-5 col-sm-6 mb-4">
                     <label for="birthdate">Full date of birth:</label>
-                    <input class="form-control" name="birthdate" id="birthdate" type="date">
+                    <input class="form-control" name="birthdate" id="birthdate" type="date" placeholder="dd.mm.yyyy">
                 </div>
             </div>
             <div class="custom-control custom-checkbox mb-4">
@@ -40,18 +40,19 @@
                 <label class="custom-control-label" for="agreement">I accept the terms of the agreement</label>
             </div>
         </fieldset>
-        <hr class="mb-4">
-        <fieldset class="col-lg-4 col-sm-6">
+        <fieldset class="col-lg-4 col-sm-12">
             <legend class="mb-3">
                 Registration
             </legend>
-            <div class="form-group mb-4">
-                <label for="email">E-mail: <span class="text-muted">(Required)</span></label>
-                <input class="form-control" name="email" id="email" type="email" required placeholder="name@example.com">
-            </div>
-            <div class="form-group mb-4">
-                <label for="password">Password: <span class="text-muted">(Required)</span></label>
-                <input class="form-control" name="password" id="password" type="password" autocomplete="disabled" required placeholder="Password">
+            <div class="row">
+                <div class="form-group col-lg-12 col-sm-6 mb-4">
+                    <label for="email">E-mail: <span class="text-muted">(Required)</span></label>
+                    <input class="form-control" name="email" id="email" type="email" required placeholder="name@example.com">
+                </div>
+                <div class="form-group col-lg-12 col-sm-6 mb-4">
+                    <label for="password">Password: <span class="text-muted">(Required)</span></label>
+                    <input class="form-control" name="password" id="password" type="password" autocomplete="disabled" required placeholder="Password">
+                </div>
             </div>
         </fieldset>
     </div>
@@ -112,9 +113,9 @@
         </div>
     </fieldset>
     <hr class="mb-4">
-    <div class="flex-row-reverse form-inline mb-5">
-        <button type="submit" class="btn btn-primary col-lg-2 col-sm-2 mb-4 offset-lg-1 offset-sm-1">Submit</button>
-        <button type="reset" class="btn btn-primary col-lg-2 col-sm-2 mb-4">Reset</button>
+    <div class="flex-column form-inline align-items-end mb-5">
+        <button type="submit" class="btn btn-primary col-lg-2 col-sm-4 mb-4">Submit</button>
+        <button type="reset" class="btn btn-primary col-lg-2 col-sm-4 mb-4">Reset</button>
     </div>
 </form>
 </body>
