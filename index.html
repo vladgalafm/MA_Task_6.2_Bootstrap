@@ -20,11 +20,11 @@
       <div class="row">
         <div class="form-group col-lg-5 col-sm-6 mb-4">
           <label for="name">Name <span class="text-muted">(Required)</span></label>
-          <input class="form-control" name="name" id="name" type="text" required minlength="2" placeholder="First name">
+          <input class="form-control" name="name" id="name" type="text" required placeholder="First name">
         </div>
         <div class="form-group col-lg-5 col-sm-6 mb-4">
           <label for="surname">Surname <span class="text-muted">(Required)</span></label>
-          <input class="form-control" name="surname" id="surname" type="text" required minlength="2" placeholder="Last name">
+          <input class="form-control" name="surname" id="surname" type="text" required placeholder="Last name">
         </div>
       </div>
       <div class="row">
@@ -34,7 +34,8 @@
         </div>
         <div class="form-group col-lg-5 col-sm-6 mb-4">
           <label for="birthdate">Full date of birth</label>
-          <input class="form-control" name="birthdate" id="birthdate" type="date" placeholder="dd.mm.yyyy">
+          <input class="form-control" name="birthdate" id="birthdate" type="date" placeholder="yyyy-mm-dd">
+          <!--<small id="birthdateHelp" class="form-text text-muted">Example: 1970-01-01</small>-->
         </div>
       </div>
       <div class="custom-control custom-checkbox mb-4">
@@ -42,7 +43,7 @@
         <label class="custom-control-label" for="agreement">I accept the terms of the agreement</label>
       </div>
     </fieldset>
-    <hr class="mb-4">
+    <hr class="mb-4 table-responsive-lg">
     <fieldset class="col-lg-4 col-sm-12">
       <legend class="mb-3">
         Registration
@@ -81,12 +82,14 @@
       <label class="col-form-label col-lg-3 col-sm-6" for="color">What is  favourite color?</label>
       <div class="col-lg-5 col-sm-6">
         <input class="form-control" id="color" type="color" placeholder="&quot;Green&quot;, &quot;Blue&quot;, ect.">
+        <!--<small id="colorHelp" class="form-text text-muted">Example: Green</small>-->
       </div>
     </div>
     <div class="form-group row mb-4">
       <label class="col-form-label col-lg-3 col-sm-6" for="timetobed">What time do you go to bed?</label>
       <div class="col-lg-5 col-sm-6">
         <input class="form-control" id="timetobed" type="time" step="10" placeholder="hh:mm:ss">
+        <!--<small id="timetobedHelp" class="form-text text-muted">Example: 23:56:40</small>-->
       </div>
     </div>
     <div class="form-group row mb-4">
